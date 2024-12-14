@@ -1,6 +1,10 @@
 package vector2
 
-type Vector2 struct {
-  x int
-  y int
+type Number interface {
+  int | uint
+}
+
+type Vector2[T Number] struct {
+  x T
+  y T
 }
