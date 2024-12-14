@@ -6,3 +6,7 @@ type Robot struct {
   position Vector2[uint]
   velocity Vector2[int]
 }
+
+func NewRobot(position Vector2[uint], velocity Vector2[int]) Robot {
+  return Robot { position, velocity }
+}
