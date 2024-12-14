@@ -9,8 +9,8 @@ import (
 )
 
 type Robot struct {
-  position Vector2[uint]
-  velocity Vector2[int]
+  Position Vector2[uint]
+  Velocity Vector2[int]
 }
 
 func NewRobot(position Vector2[uint], velocity Vector2[int]) Robot {
@@ -39,7 +39,7 @@ func ParseRobot(s string) Robot {
 func (r Robot) String() string {
   return fmt.Sprintf(
     "Robot:\n  position: %v\n  velocity: %v",
-    r.position,
-    r.velocity,
+    r.Position,
+    r.Velocity,
   )
 }

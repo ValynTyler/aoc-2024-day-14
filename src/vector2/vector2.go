@@ -7,8 +7,8 @@ type Number interface {
 }
 
 type Vector2[T Number] struct {
-  x T
-  y T
+  X T
+  Y T
 }
 
 func NewVector2[T Number] (x T, y T) Vector2[T] {
@@ -16,5 +16,5 @@ func NewVector2[T Number] (x T, y T) Vector2[T] {
 }
 
 func (v Vector2[T]) String() string {
-  return fmt.Sprintf("Vector2(%d, %d)", v.x, v.y)
+  return fmt.Sprintf("Vector2(%d, %d)", v.X, v.Y)
 }
